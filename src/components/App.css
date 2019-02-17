@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Noto+Sans');
+
+body {
+  color: #ffffff;
+}
+
+#container {
+  text-align: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+i {
+  cursor: pointer;
+}
+
+#title {
+  padding-top: 20px;
+  font-family: 'Courgette', cursive;
+  font-size: 50px;
+  color: #61dafb;
+}
+
+.length-item {
+  display: inline-block;
+  margin: 20px 10px 20px 10px;
+}
+
+.session-display {
+  margin-bottom: 40px;
+  display: inline-block;
+  padding: 15px 50px 15px 50px;
+  border: solid 5px #61dafb;
+  border-radius: 20px;
+}
+
+.time-remaining-div {
+  margin-bottom: 10px;
+}
+
+#time-remaining-text {
+  font-size: 60px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  outline: none;
+}
+
+footer {
+  position: relative;
+  top: 40px;
+  font-size: 20px;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 10%;
+  }
+
+  #title {
+    font-size: 40px;
+  }
+
+  #break-length-item {
+    margin-bottom: 0;
+  }
+
+  #session-length-item {
+    margin-bottom: 20px;
+  }
+
+  i {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+  }
+}
