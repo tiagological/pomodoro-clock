@@ -14,6 +14,24 @@ class App extends React.Component {
     intervalID: ''
   };
 
+  componentDidUpdate = () => {
+    this.setAppTitle();
+  };
+
+  setAppTitle = () => {
+    let minutes = Math.floor(this.state.totalSeconds / 60);
+
+    // checks how many seconds remaining after the minutes
+    let secondsRemaining = this.state.totalSeconds % 60;
+
+    // displays time left
+    let timeRemaining = `${minutes < 10 ? '0' : ' '}${minutes}:${
+      secondsRemaining < 10 ? '0' : ''
+    }${secondsRemaining}`;
+
+    document.title = timeRemaining;
+  };
+
   decrementSession = () => {
     if (
       this.state.timerStatus === 'paused' &&
