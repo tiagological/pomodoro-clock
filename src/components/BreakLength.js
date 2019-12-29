@@ -6,7 +6,7 @@ const BreakLength = ({ amount, decrementBreak, incrementBreak }) => {
     <div className='length-item' id='break-length-item'>
       <h2>Break Length</h2>
       <i className='big arrow down icon' onClick={decrementBreak} />
-      <h3>{amount}</h3>
+      <h3 data-testid='break-amount'>{amount}</h3>
       <i className='arrow-up big arrow up icon' onClick={incrementBreak} />
     </div>
   );
