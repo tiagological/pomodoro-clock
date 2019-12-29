@@ -22,5 +22,9 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage": "."
+  "homepage": ".",
+  "devDependencies": {
+    "@testing-library/dom": "^6.11.0",
+    "@testing-library/react": "^9.4.0"
+  }
 }
